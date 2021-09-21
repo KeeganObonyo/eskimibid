@@ -1,0 +1,12 @@
+#Compile Results
+**target
+.bsp
+
+#IntelliJ Files
+.idea
+
+*.iml
+*.log
+
+#Mac Files
+.DS_Store
