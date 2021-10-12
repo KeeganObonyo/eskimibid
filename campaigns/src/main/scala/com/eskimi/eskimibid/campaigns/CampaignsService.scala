@@ -17,7 +17,6 @@ import core.util.{ EskimiCCPrinter, EskimiConfig }
 
 object CampaignsService {
 
-
 	sealed trait Targeting { val targetedSiteIds: List[String] }
 	sealed trait Banner { val id: Int; val src: String; val width: Int; val height: Int }
 	sealed trait Campaign { val id: Int; val country: String; val targeting: Targeting; val banners: List[Banner]; val bid: Double }
@@ -31,7 +30,6 @@ object CampaignsService {
 	case object Campaign2 extends Campaign { val id = 2; val country = "SA"; val targeting = Targeting; val banners = List(Banner1,Banner2,Banner3); val bid = 44.0 }
 	
     case class ActiveCampaignserviceRequest(
-      limit: Int
     ) extends EskimiCCPrinter
 
     case class ActiveCampaignserviceResponce(
