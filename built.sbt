@@ -1,4 +1,4 @@
-val akkaVersion   = "2.6.5"
+val akkaVersion   = "2.4.17"
 lazy val sharedSettings = Seq(
   organization  := "com.eskimi",
   version       := "0.1.0",
